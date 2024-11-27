@@ -173,25 +173,25 @@
 .accordion-button:active,
 .accordion-button.collapsed:focus,
 .accordion-button:not(.collapsed) {
-    box-shadow: none; /* Remove the blue box-shadow */
-    outline: none; /* Remove the outline */
-    background-color: #66bb6a; /* Dark background color for the button */
-    color: #000000; /* White text color */
+    box-shadow: none;
+    outline: none;
+    background-color: #66bb6a;
+    color: #000000;
 }
-        
+
 /* Ensure input labels and placeholders are visible */
 .container.my-4 .form-label,
 .container.my-4 input::placeholder,
 .container.my-4 textarea::placeholder {
-    color: #f0f0f0; /* Light color for better contrast */
+    color: #f0f0f0;
 }
 
 /* Ensure text in input fields and textarea is visible */
 .container.my-4 input,
 .container.my-4 textarea {
-    color: #ffffff; /* White text */
-    background-color: #2c2c2c; /* Dark background for inputs */
-    border: 1px solid #4caf50; /* Highlight border color */
+    color: #ffffff;
+    background-color: #2c2c2c;
+    border: 1px solid #4caf50;
     border-radius: 5px;
 }
 
@@ -199,7 +199,7 @@
 .container.my-4 input:focus,
 .container.my-4 textarea:focus {
     outline: none;
-    box-shadow: 0 0 5px #4caf50; /* Subtle green glow */
+    box-shadow: 0 0 5px #4caf50;
     border-color: #4caf50;
 }
 
@@ -207,49 +207,54 @@
 .btn-primary,
 .btn-primary:hover,
 .btn-primary:focus {
-    background-color: #4caf50; 
-    border-color: #4caf50; 
-    color: #ffffff;     
+    background-color: #4caf50;
+    border-color: #4caf50;
+    color: #ffffff;
 }
 
 /* Secondary Button Styling for 'Pelajari Lebih Lanjut' */
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-    background-color: #4caf50; 
+    background-color: #4caf50;
     border-color: #4caf50;
     color: #ffffff;
 }
 
 .carousel-item img {
-    width: 100%; /* Ensures the images scale proportionally */
-    max-height: 600px; /* Sets a consistent maximum height */
-    object-fit: cover; /* Ensures images fill the frame without distortion */
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    border-radius: 50%; /* Makes it circular */
-    padding: 15px; /* Increases clickable area */
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 15px;
 }
 
 .carousel-control-prev-icon:hover,
 .carousel-control-next-icon:hover {
-    background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
-    transform: scale(1.1); /* Slight zoom effect */
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: scale(1.1);
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-    width: 5%; /* Adjust button width for better visibility */
+    width: 5%;
 }
 
 .carousel-control-prev-icon::after,
 .carousel-control-next-icon::after {
-    color: white; /* Change arrow color */
-    font-size: 20px; /* Larger arrow size */
-    content: ''; /* Customizable with fonts or icons */
+    color: white;
+    font-size: 20px;
+    content: '';
+}
+
+.highlighted-text {
+    color: #4caf50;  /* Green color for highlighting */
+    font-weight: bold; /* Make text bold */
 }
 
         </style>
@@ -435,6 +440,42 @@
             referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </div>
+    </div>
+</div>
+
+<!-- Gaboets  -->
+<div class="container my-4">
+    <h3 class="text-center mb-4">MaiMai Cabinet Locations in Bali</h3>
+    <div id="locationsCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="text-center">
+                    <h5 class="highlighted-text">Timezone Level 21 Mall Bali</h5>
+                    <a href="https://goo.gl/maps/6m8Ztc5hZYk3NWjM7" target="_blank">
+                        <img src="lvl_21.jpeg" class="d-block mx-auto" alt="Level 21 Mall" 
+                             style="max-width: 100%; height: 300px; object-fit: cover; border-radius: 10px;">
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="text-center">
+                    <h5 class="highlighted-text">Timezone Mall Bali Galeria</h5>
+                    <a href="https://goo.gl/maps/2xVJ5mVQxkD2" target="_blank">
+                        <img src="Mal-Bali-Galeria-5.jpg" class="d-block mx-auto" alt="Mall Bali Galeria" 
+                             style="max-width: 100%; height: 300px; object-fit: cover; border-radius: 10px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#locationsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#locationsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 </div>
 
